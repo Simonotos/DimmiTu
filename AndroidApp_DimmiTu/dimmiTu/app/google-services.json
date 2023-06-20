@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "464069563459",
+    "firebase_url": "https://dimmitu-76311-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "dimmitu-76311",
+    "storage_bucket": "dimmitu-76311.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464069563459:android:662e02b4a755bd72dfb0f6",
+        "android_client_info": {
+          "package_name": "it.unimib.dimmitu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "464069563459-b1uiqecb7jjqiq9gbkbjogkjif348qhi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwwaksh4lF589SgX-moKZfJheCej6edrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "464069563459-b1uiqecb7jjqiq9gbkbjogkjif348qhi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,7 @@
+colore interesse 1 : #FFDB15
+colore interesse 2 : #FF5765
+colore interesse 3 : #8A6FDF
+
+sfondo: #0C0C1E
+
+colore_bottoni: #81B622

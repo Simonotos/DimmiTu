@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C1E"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_impostazioni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="Impostazioni"
+                android:textColor="@android:color/white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/data_cardview"
+                android:layout_width="330dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="40dp"
+                android:elevation="20dp"
+                app:cardBackgroundColor="#FFDB15"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <TextView
+                        android:id="@+id/textView_UserEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="8dp"
+                        android:textSize="18sp"
+                        app:drawableStartCompat="@drawable/ic_email"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView_interessi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/interessi"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/reset_password" />
+
+            <Spinner
+                android:id="@+id/spinner_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:minHeight="48dp"
+                android:popupBackground="#0C0C1E"
+                android:tag="spinner_film"
+                app:layout_constraintBottom_toBottomOf="@+id/image_film"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/spinner_videogiochi"
+                app:layout_constraintTop_toBottomOf="@+id/textView_interessi"
+                app:layout_constraintTop_toTopOf="@+id/image_film"
+                tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+            <Spinner
+                android:id="@+id/spinner_libri"
+                android:layout_width="wrap_content"
+                android:popupBackground="#0C0C1E"
+                android:layout_height="48dp"
+                android:layout_marginEnd="30dp"
+                android:tag="spinner_libri"
+                app:layout_constraintBottom_toBottomOf="@+id/image_libri"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/spinner_videogiochi"
+                app:layout_constraintTop_toTopOf="@+id/image_libri"
+                app:layout_constraintVertical_bias="0.0"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Spinner
+                android:id="@+id/spinner_videogiochi"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:popupBackground="#0C0C1E"
+                android:layout_marginEnd="30dp"
+                android:tag="spinner_videogiochi"
+                app:layout_constraintBottom_toBottomOf="@+id/image_videogiochi"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_videogiochi"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/button_logout"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="3dp"
+                android:backgroundTint="#FF5765"
+                android:onClick="logout"
+                android:text="@string/button_logout"
+                app:layout_constraintBottom_toBottomOf="@id/button_salva"
+                app:layout_constraintEnd_toStartOf="@+id/button_salva"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/button_salva"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/button_salva"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="#8A6FDF"
+                android:onClick="salva"
+                android:text="@string/button_salva"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/button_logout"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_videogiochi"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/image_videogiochi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/videogiochi"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_videogiochi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_libri"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_baseline_videogame_asset_24" />
+
+            <ImageView
+                android:id="@+id/image_libri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/libri"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_libri"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_film"
+                app:srcCompat="@drawable/ic_baseline_menu_book_24" />
+
+            <ImageView
+                android:id="@+id/image_film"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/film"
+                app:layout_constraintEnd_toStartOf="@+id/spinner_film"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_interessi"
+                app:srcCompat="@drawable/ic_baseline_movie_24" />
+
+            <Button
+                android:id="@+id/reset_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/md_theme_light_primary"
+                android:onClick="resetPassword"
+                android:text="@string/reset_password"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/data_cardview" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@id/navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:itemBackground="@color/md_theme_light_primary"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemPaddingBottom="8dp"
+        app:itemPaddingTop="8dp"
+        app:itemTextColor="@drawable/item_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_navigation" />
+
+</LinearLayout>

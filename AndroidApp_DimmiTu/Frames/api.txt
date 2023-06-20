@@ -1,0 +1,6 @@
+api per videogiochi free:
+https://www.igdb.com/discover oppure https://www.freetogame.com/api-doc  
+api per film:
+https://imdb-api.com/api
+api per libri:
+

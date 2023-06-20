@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0C0C1E"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="30dp"
+            app:cardBackgroundColor="#8A6FDF"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/inizia"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="324dp"
+                android:layout_marginRight="324dp"
+                android:layout_marginBottom="144dp"
+                android:text="Libri"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="97dp"
+                android:layout_marginRight="97dp"
+                android:layout_marginBottom="161dp"
+                android:text="Videogiochi"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="153dp"
+                android:layout_marginRight="153dp"
+                android:layout_marginBottom="61dp"
+                android:text="Film"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck,UnknownId"
+                android:background="#0C0C1E"
+                android:popupBackground="#0C0C1E"/>
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="170dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginBottom="115dp"
+                android:background="#0C0C1E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck"
+                android:popupBackground="#0C0C1E"/>
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="145dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="241dp"
+                android:layout_marginRight="241dp"
+                android:layout_marginBottom="35dp"
+                android:background="#0C0C1E"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:popupBackground="#0C0C1E"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="293dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="98dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ora associa un colore ai tuoi interessi"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/cardView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/inizia"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="160dp"
+            android:layout_marginBottom="40dp"
+            android:text="SI INIZIA!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
