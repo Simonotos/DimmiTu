@@ -14,8 +14,8 @@ Membri del Gruppo: Simone Crocco, Dounia Jaoudi, Riccardo Borsani, Carlo Di Iori
 
 # Images of the App:
 <div style="display: flex;">
-   <img src="https://github.com/Simonotos/AndroidApp_DimmiTu/blob/main/Screenshots/homepage%20consigli.png" width="300" height="510">
-   <img src="https://github.com/Simonotos/AndroidApp_DimmiTu/blob/main/Screenshots/interessi.png" width="300" height="510">
-   <img src="https://github.com/Simonotos/AndroidApp_DimmiTu/blob/main/Screenshots/ricerca%20interessi.png" width="300" height="510">
-   <img src="https://github.com/Simonotos/AndroidApp_DimmiTu/blob/main/Screenshots/ricerca%20interessi%20dettagli.png" width="300" height="510">
+   <img src="https://github.com/Simonotos/DimmiTu/blob/main/AndroidApp_DimmiTu/Screenshots/homepage%20consigli.png" width="300" height="510">
+   <img src="https://github.com/Simonotos/DimmiTu/blob/main/AndroidApp_DimmiTu/Screenshots/interessi.png" width="300" height="510">
+   <img src="https://github.com/Simonotos/DimmiTu/blob/main/AndroidApp_DimmiTu/Screenshots/ricerca%20interessi.png" width="300" height="510">
+   <img src="https://github.com/Simonotos/DimmiTu/blob/main/AndroidApp_DimmiTu/Screenshots/ricerca%20interessi%20dettagli.png" width="300" height="510">
 </div>
